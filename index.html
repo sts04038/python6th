@@ -1,14 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko"> <!--lang = ko는 해당 문서가 한국어를 포함하고 있을때-->
     <head>
         <title> My First Webpages</title>
     </head>
     <body>
-    <h1> Headings </h1>
-    <h1>Welcome</h1>
-    <h2>Welcome (h2)</h2>
-    <h3>Welcome (h2)</h3>
-    <h4>Welcome (h2)</h4>
-    <h5>Welcome (h2)</h5>
+        <h1> Headings </h1>
+        <h1>Welcome</h1>
+        <h2>Welcome (h2)</h2>
+        <br>     <!--자체 줄바꿈 태그-->
+        <h1>Paragraph</h1>
+        <p>This is a paragraph</p>
+        <p>This is another <strong>paragraph</strong> of <i>text</i></p>
+        <h1>Links</h1>
+            <!--target="_blank" 하면 클릭 했을때, 새 창에서 열린다.-->
+            <a href="https://google.com" target="_blank">Link to Google</a>
+        <br>
+        <h1>Images</h1>
+        <img src = "https://picsum.photos/200/300"> <!--200*300 사이즈 random 이미지 주소-->
+        <br>
+        <!--list 예시-->
+        <h1>Lists</h1>
+        <ul>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item
+                <ul>
+                    <li><a href="https://google.com">Link to Google</a></li>
+                    <li><a href="https://naver.com">Link to naver</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ol>
+            <li>Ordered list</li>
+            <li>Ordered list</li>
+            <li>Ordered list</li>
+        </ol>
+        <br>
+        <h1>Tables</h1>
+        <table>
+            <thead> <!--전체 table head-->
+                <tr>  <!--table row-->
+                    <th>First name</th> <!--한 head row에 있는 한 셀, 1열 column이라고 보면됨-->
+                    <th>Last name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td> <!--table body row에 있는 한 셀-->
+                    <td>Park</td>
+                    <td>dpark@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>John</td> <!--table body row에 있는 한 셀-->
+                    <td>Park</td>
+                    <td>example@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <h1 id="h1">Registration Form</h1>
+        <form>
+            <fieldset>
+                <legend>Account</legend> <!--잘쓰지 않으나 정석-->
+                <label for="name">Name</label> <!--for이란 이 label(name)을 클릭했을때 id-"name"으로 이동시켜줌, -->
+                <input type="text" id="name" name="name" required> <!--input에는 type이 필수다-->
+                <br>
+                <label for="email">email</label>
+                <input type="text" id="email" name="email">
+                <br>
+                <label for="password">password</label>
+                <input type="text" id="password" name="password">
+            </fieldset>
+            <fieldset>
+                <legend>User Info</legend>
+                <label for="location">Address</label>
+                <select name="location" id="location"> <!--dropdown box 만들기-->
+                    <option value="NA">MA</option>
+                    <option value="NY">NY</option>
+                    <option value="CA">CA</option>
+                </select>
+                <br>
+                <h4>Gender</h4>
+                <label for="gender1">Male</label>
+                <!--name은 내가 받을 정보의 선택 옵션-->
+                <!--만약 radio button name이 둘다 gender가 아니고 다르면 양자택일 옵션 안됨-->
+                <input type="radio" name="gender" id="gender1" value="Male">
+                <label for="gender2">Female</label>
+                <input type="radio" name="gender" id="gender2" value="Female">
+                <br>
+                <label for="gender11">Male</label>
+                <input type="checkbox" name="gender" id="gender11" value="Male">
+                <label for="gender22">Female</label>
+                <input type="checkbox" name="gender" id="gender22" value="Female">
+
+            </fieldset>
+            <input type="submit" value="register">
+        </form>
     </body>
 </html>
