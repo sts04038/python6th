@@ -1,0 +1,33 @@
+body {
+    background: #f4f4f4;
+    font-family: arial, sans-serif; /*sans-serif: 명조체냐 고딕체냐 차이*/
+    line-height: 1.5em;
+}
+#container {
+    border: 1px #cccccc solid; /*테두리 생김*/
+    /*padding으로 테두리 안쪽 여백주기*/
+    padding: 0 10px 0 10px;  /*top right bottom left 시계방향이다*/
+    /*-- 다른 방식으로도 할 수 있다.
+    padding-right: 10;
+    padding-left: 10;
+    */
+
+    /*margin은 테두리 밖쪽 여백을 만들어 준다.*/
+    width: 800px; /*container 넓이 설정*/
+    margin: 30px auto; /*auto은 가로에만 있다. 세로는 무한히 확장할 수 있기 때문이다.*/
+    overflow: auto; /*자동제어 다른걸론, hidden, scroll등 있다.*/
+}
+
+.highlight {
+    color: red;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.left-side {
+    float: left;
+    width: 50%;
+}
+
+
+
