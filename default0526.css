@@ -1,3 +1,4 @@
+/*
 :root {
     background-color: #cccccc;
 }
@@ -199,4 +200,88 @@ h1.text3 {
 
 #border-img {
     border: 10px solid;
+}
+*/
+
+/*
+@keyframes colorchange {
+    0% {
+        background-color: red;
+        left: 0;
+        topL 0;
+    }
+
+    25% {
+        background-color: yellow;
+        left: 200px;
+        topL 0;
+    }
+    25% {
+        background-color: yellow;
+        left: 200px;
+        topL 0;
+    }
+    50% {
+        background-color: green;
+        left: 200px;
+        topL 200px;
+    }
+    75% {
+        background-color: blue;
+        left: 0px;
+        topL 200px;
+    }
+    100% {
+        background-color: red;
+        left: 0;
+        topL 0;
+    }
+}*/
+
+/*2시 수업 부터========================================*/
+article {
+    column-count: 3;
+    column-gap: 40px;
+    column-rule: 1px solid coral;
+}
+
+article h1 {
+    column-span: all;
+}
+
+.textbox1 {
+    border: 2px solid;
+    padding: 20px;
+    width: 300px;
+    overflow: auto;
+    resize: both;
+}
+
+.textbox2 {
+    margin: 20px;
+    padding: 10px;
+    width: 300px;
+    height: 100px;
+    border: 1px solid black;
+    outline: 1px solid red;
+    outline-offset: 10px;
+}
+/*flex가 생기면서 웹페이지가 예뻐졌음 - 요즘은 bootstrap5 많이씀*/
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+    height: 250px;
+    background-color: black;
+}
+
+.flex-item {
+    background-color: lightblue;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.first {
+    order: -1;
 }
