@@ -10,14 +10,14 @@
 //alert('Welcome JS Program') // 팝업창 뜸 - 웬만하면 사용하지 않음 - 제일 먼저 실행되고 사용자 당황함
 //var a = prompt('Welcome to JS Program');
 //console.log(a)
-
+//
 //typeof - 변수 타입 알려줌
 //console.log(typeof 123);            // number
 //console.log(123.5, typeof 123.5);   // 123.5, "number"
 //console.log(typeof "123");          // string
 //console.log(typeof true);           // boolean
 //console.log(typeof false);          // boolean
-//
+
 //var car;
 //var car = "";
 //
