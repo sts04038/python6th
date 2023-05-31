@@ -38,33 +38,59 @@
 //    console.log(a + b);
 //})(3, 4);
 
+//var names = new Array(20);
+//names[0] = "John";
+//names[1] = "Dean";
+//
+//console.log(names[1]);
+//
+//// Create an array with values
+//var students = ["John", "Dean", "Diane", "Anna"];
+//console.log("Students = " + students);
+//console.log("Student at index 2 = " + students[2]);
+//
+//// Find the length of the array
+//console.log("Length of the students array: " + students.length);
+//
+//// Add elements to the array
+//students.push("Luna");
+//console.log("Array after push operation: " + students);
+//
+//// Remove elements from the array
+//students.pop();
+//console.log("Array after pop operation: " + students);
+//
+//// Concatenate arrays
+//var numArray1 = [10, 20];
+//var numArray2 = [10, 40, 50, 60];
+//var numArray = numArray1.concat(numArray2);
+//
+//console.log("Array concatenation: " + numArray);
+//console.log(numArray1.concat(numArray2));
 
-var names = new Array(20);
-names[0] = "John";
-names[1] = "Dean";
+// 5교시 code - 날짜 정보는 시스템이 가지고 객체를 가지고 있어서 괜찮은데
+// 시간은 사용자의 컴퓨터를 base로 하므로 오차가 생각보다 많이 날 수 있다. - 개발을 아는 개발자들은 정시 이벤트 잘 안 만드는 이유
+var data = new Date();
+console.log(data);
 
-console.log(names[1]);
+var year = data.getFullYear();
+console.log(year);
 
-// Create an array with values
-var students = ["John", "Dean", "Diane", "Anna"];
-console.log("Students = " + students);
-console.log("Student at index 2 = " + students[2]);
+var month = data.getMonth();
+console.log(month);
 
-// Find the length of the array
-console.log("Length of the students array: " + students.length);
+var currentDate = data.getDate();
+console.log(currentDate);
 
-// Add elements to the array
-students.push("Luna");
-console.log("Array after push operation: " + students);
+var currentDay = data.getDay();
+console.log(currentDay);
 
-// Remove elements from the array
-students.pop();
-console.log("Array after pop operation: " + students);
+var currentHour = data.getHours();
+console.log(currentHour);
 
-// Concatenate arrays
-var numArray1 = [10, 20];
-var numArray2 = [10, 40, 50, 60];
-var numArray = numArray1.concat(numArray2);
+var currentMinutes = data.getMinutes();
+console.log(currentMinutes);
 
-console.log("Array concatenation: " + numArray);
-console.log(numArray1.concat(numArray2));
+// The getTime() method returns the numeric value representing the time
+// in milliseconds elapsed since January 1, 1970, 00:00:00 UTC (Coordinated Universal Time).
+console.log('getTime : ', data.getTime());
