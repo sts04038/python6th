@@ -10,265 +10,32 @@
 
 </head>
 <body>
-<!--<h1> Hello,  bootstrap5!</h1>
-<div class="container">
-    <div class="row">
-        <div class="col-md-4" style="background-color: lightblue">
-            첫번째 열
-        </div>
-        <div class="col-md-4" style="background-color: lightgreen">
-            두번째 열
-        </div>
-        <div class="col-md-4" style="background-color: lightyellow">
-            세번째
-        </div>
-    </div>
-</div>-->
-
-<!--2교시-->
-<!--css는 맨 마지막에 추가된 값으로 덮어쓰기된다. -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-        <a href="#" class="navbar-brand">Navbar</a>
-        <button class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-        >
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Home</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-<!--Alerts-->
+<!--pagination-->
 <div class="container mt-4">
-    <div class="alert alert-success" role="alert">
-        <!--message 입력하는 코너-->
-        This is a friendly reminder that smthing went wrong!
-    </div>
-</div>
-<!--3교시-->
-<!--Button-->
-<div class="container mt-4">
-    <button type="button" class="btn btn-primary">primary</button>
-    <button type="button" class="btn btn-secondary">secondary</button>
-    <button type="button" class="btn btn-info">info</button>
-    <button type="button" class="btn btn-warning">warning</button>
-</div>
-<!--cards-->
-<div>
-    <div class="container mt-4">
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Card Title</h5>
-                        <p class="card-text">
-                            some quick example text to build on the card title and make up the bulk of the card's content
-                        </p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Card Title</h5>
-                        <p class="card-text">
-                            some quick example text to build on the card title and make up the bulk of the card's content
-                        </p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--form-->
-<div class="container mt-4">
-    <form action="#">
-        <div class="mb-3">
-            <label for="exampleInputEmail">Email Address</label>
-            <input type="email"
-                   class="form-control"
-                   id="exampleInputEmail"
-            >
-            <div id="emailHelp" class="form-text">
-                we will never share your email with anyone else.
-            </div>
-        </div>
-        <div class="mb-3">
-            <label for="exampleInputPassword1">password</label>
-            <input type="email"
-                   class="form-control"
-                   id="exampleInputPassword1"
-            >
-        </div>
-        <button type="submit" class="btn btn-primary">submit</button>
-    </form>
-</div>
-<!--Dropdown-->
-<div class="container mt-4">
-    <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle"
-                type="button"
-                id="dropdownMenuButton"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-        >
-            Dropdown button
-        </button>
-        <ul class="dropdown-menu">
-            <li>
-                <a href="#" class="dropdown-item">Action</a>
-            </li>
-            <li>
-                <a href="#" class="dropdown-item">Another action</a>
-            </li>
-            <li>
-                <a href="#" class="dropdown-item">something else here</a>
-            </li>
+    <nav>
+        <ul class="pagination">
+            <li class="page-item"><a href="#" class="page-link">이전</a></li>
+            <li class="page-item"><a href="#" class="page-link">1</a></li>
+            <li class="page-item"><a href="#" class="page-link">1</a></li>
+            <li class="page-item"><a href="#" class="page-link">1</a></li>
+            <li class="page-item"><a href="#" class="page-link">1</a></li>
+            <li class="page-item"><a href="#" class="page-link">다음</a></li>
         </ul>
-    </div>
+    </nav>
 </div>
-
-<!--modal-->
+<!--Breadcrumbs-->
 <div class="container mt-4">
-    <!--button trigger modal-->
-    <button type="button"
-            class="btn btn-primary"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-    >
-        Launch demo modal
-    </button>
-<!--modal-->
-    <div class="modal fade"
-            id="exampleModal"
-            tabindex="-1"
-    >
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Modal title</h5>
-                    <button type="button"
-                            class="btn-close"
-                            data-bs-dismiss="modal"
-                    ></button>
-                </div>
-                <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button"
-                            class="btn btn-secondary"
-                    >
-                        Close
-                    </button>
-                    <button type="button"
-                            class="btn btn-primary"
-                    >
-                        Save Changes
-                    </button>
+    <nav>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
 
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--4교시-->
-<!--Carousels-->
-<div class="container mt-4">
-    <div id="carouselExampleControls"
-         class="carousel slide"
-         data-bs-ride="carousel"
-    >
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="https://via.placeholder.com/900x300"
-                     class="d-block w-100"
-                     alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="https://via.placeholder.com/900x300"
-                     class="d-block w-100"
-                     alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="https://via.placeholder.com/900x300"
-                     class="d-block w-100"
-                     alt="...">
-            </div>
-        </div>
-        <button class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev"
-        >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">이전</span>
-        </button>
-        <button class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleControls"
-                data-bs-slide="next"
-        >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">다음</span>
-        </button>
-    </div>
-</div>
-<div class="container mt-4">
-    <button type="button"
-            class="btn btn-secondary"
-            data-bs-toggle="tooltip"
-            data-bs-placement="top"
-            title="Tooltip on top"
-    >
-        Tooltip on top
-    </button>
-</div>
-
-<!--Popovers-->
-<div class="container mt-4">
-    <button type="button"
-            class="btn btn-info"
-            data-bs-container="body"
-            data-bs-toggle="popover"
-            data-bs-placement="bottom"
-            data-bs-content="this is a popover example."
-    >
-        Popover on bottom
-    </button>
+            <li class="breadcrumb-item"><a href="#">Library</a></li>
+            <li class="breadcrumb-item active">Data</li>
+        </ol>
+    </nav>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 <script>
-    var tooltipTriggerList = [].slice.call(
-        document.querySelectorAll('[data-bs-toggle="tooltip"]')
-    )
-    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-        return new bootstrap.Tooltip(tooltipTriggerEl);
-    })
-
-    var popoverTriggerList = [].slice.call(
-        document.querySelectorAll('[data-bs-toggle="popover"]')
-    );
-    var popoverList = popoverTriggerList.map(function(popoverTriggerEl) {
-        return new bootstrap.Popover(popoverTriggerEl);
-    })
 </script>
 </body>
 </html>
