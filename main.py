@@ -44,3 +44,16 @@ print('a < b: ', a < b)   # a < b:  False
 print('a <= b: ', a <= b) # a <= b:  False
 print('a == b: ', a == b) # a == b:  False
 print('a != b: ', a != b) # a != b:  True
+
+# 논리 연산자
+a = 5
+b = 2
+c = 3
+d= 200
+
+#AND 연산자
+print('a > b and a > c: ', a > b and a > c) # a > b and a > c:  True
+#OR 연산자
+print('a > b or a > c: ', a > b or a > c)   # a > b or a > c:  True
+#NOT 연산자
+print('a > b and a > c: ', not(a < b))      # a > b and a > c:  True
