@@ -17,43 +17,54 @@
 # print("g: ", type(g))   # g:  <class 'dict'>
 
 # 연산자
-a = 4
-b = 2
-# 덧셈
-print("total = a + b :", a + b) # total = a + b : 6
-# 뺄셈
-print("total = a - b :", a - b) # total = a - b : 2
-# 곱셈
-print("total = a * b :", a * b) # total = a * b : 8
-# 나눗셈
-print("total = a / b :", a / b) # total = a / b : 2.0
-# 나머지
-print("total = a % b :", a % b) # total = a % b : 0
-# 거듭제곱
-print("total = a ** b :", a ** b) # total = a ** b : 16
-# 몫 (양수)
-print("total = a // b :", a // b) # total = a // b : 2
-# 몫 (음수)
-c = -5
-print("total = c // b :", c // b) # total = c // b : -3
+# a = 4
+# b = 2
+# # 덧셈
+# print("total = a + b :", a + b) # total = a + b : 6
+# # 뺄셈
+# print("total = a - b :", a - b) # total = a - b : 2
+# # 곱셈
+# print("total = a * b :", a * b) # total = a * b : 8
+# # 나눗셈
+# print("total = a / b :", a / b) # total = a / b : 2.0
+# # 나머지
+# print("total = a % b :", a % b) # total = a % b : 0
+# # 거듭제곱
+# print("total = a ** b :", a ** b) # total = a ** b : 16
+# # 몫 (양수)
+# print("total = a // b :", a // b) # total = a // b : 2
+# # 몫 (음수)
+# c = -5
+# print("total = c // b :", c // b) # total = c // b : -3
+#
+# # 비교 연산자
+# a = 5
+# b = 2
+# print('a < b: ', a < b)   # a < b:  False
+# print('a <= b: ', a <= b) # a <= b:  False
+# print('a == b: ', a == b) # a == b:  False
+# print('a != b: ', a != b) # a != b:  True
+#
+# # 논리 연산자
+# a = 5
+# b = 2
+# c = 3
+# d= 200
+#
+# #AND 연산자
+# print('a > b and a > c: ', a > b and a > c) # a > b and a > c:  True
+# #OR 연산자
+# print('a > b or a > c: ', a > b or a > c)   # a > b or a > c:  True
+# #NOT 연산자
+# print('a > b and a > c: ', not(a < b))      # a > b and a > c:  True
 
-# 비교 연산자
-a = 5
-b = 2
-print('a < b: ', a < b)   # a < b:  False
-print('a <= b: ', a <= b) # a <= b:  False
-print('a == b: ', a == b) # a == b:  False
-print('a != b: ', a != b) # a != b:  True
+# 비트 연산자
+a = 10
+b = 15
+print('a: ', bin(a)) # a:  0b1010
+print('b: ', bin(b)) # b:  0b1111
+print('~a: ', bin(~a)) # ~a:  -0b1011
+print('a & b: ', a & b) # a & b:  10
+print('a << b: ', a << 2) # a << 2:  40
+print('a >> b: ', a >> 2) # a >> 2:  2
 
-# 논리 연산자
-a = 5
-b = 2
-c = 3
-d= 200
-
-#AND 연산자
-print('a > b and a > c: ', a > b and a > c) # a > b and a > c:  True
-#OR 연산자
-print('a > b or a > c: ', a > b or a > c)   # a > b or a > c:  True
-#NOT 연산자
-print('a > b and a > c: ', not(a < b))      # a > b and a > c:  True
