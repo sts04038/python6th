@@ -58,13 +58,34 @@
 # #NOT 연산자
 # print('a > b and a > c: ', not(a < b))      # a > b and a > c:  True
 
-# 비트 연산자
-a = 10
-b = 15
-print('a: ', bin(a)) # a:  0b1010
-print('b: ', bin(b)) # b:  0b1111
-print('~a: ', bin(~a)) # ~a:  -0b1011
-print('a & b: ', a & b) # a & b:  10
-print('a << b: ', a << 2) # a << 2:  40
-print('a >> b: ', a >> 2) # a >> 2:  2
+# # 비트 연산자
+# a = 10
+# b = 15
+# print('a: ', bin(a)) # a:  0b1010
+# print('b: ', bin(b)) # b:  0b1111
+# print('~a: ', bin(~a)) # ~a:  -0b1011
+# print('a & b: ', a & b) # a & b:  10
+# print('a << b: ', a << 2) # a << 2:  40
+# print('a >> b: ', a >> 2) # a >> 2:  2
 
+# # 멤버 in 연산자
+# st1 = "Welcome to like lion"
+# print("to" in st1)  # True
+#
+# st2 = "Welcome to like lion"
+# print("wel" in st2)  # False
+#
+# st3 = "Welcome to like lion"
+# print("wel" not in st3)  # True
+
+# is 연산자
+a = 10
+b = 10
+print(a is b) # True
+print(a is not b) # False
+
+b = 7
+print(a is b) # True
+print(a is not b) # False
+
+# 암시적 타입 변환
