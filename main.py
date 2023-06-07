@@ -78,14 +78,24 @@
 # st3 = "Welcome to like lion"
 # print("wel" not in st3)  # True
 
-# is 연산자
-a = 10
-b = 10
-print(a is b) # True
-print(a is not b) # False
+# # is 연산자
+# a = 10
+# b = 10
+# print(a is b) # True
+# print(a is not b) # False
+#
+# b = 7
+# print(a is b) # True
+# print(a is not b) # False
+#
+# data = [10, 20, -50, 21, 3, 'LikeLion']
+# print(data)
+# data1 = ["like", "Share", "Subscribe"]
+# print("like", "Share", "Subscribe", sep = '***') # like***Share***Subscribe
+# print("like", "Share", "Subscribe", sep = ' ', end='\n') # like Share Subscribe + 한줄 띄어쓰기
 
-b = 7
-print(a is b) # True
-print(a is not b) # False
+# 입력
+mobile = input("Enter your moblie number: ")
+mb = int(mobile) # Enter your moblie number: 12312341212
+print(mb, type(mb)) # 12312341212 <class 'int'>
 
-# 암시적 타입 변환
