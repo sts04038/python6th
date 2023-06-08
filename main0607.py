@@ -31,55 +31,76 @@
 # print(b.issubset(a))    # output: True
 # print(a.issuperset(b))  # output: True
 
-# dictionary
-stu = {101: 'Kim', 102: 'Bae', 103: 'Park'}
-fees = {'Kim': 2000, 'Bae': 3000, 'Park': 8000}
-
-print(stu[101])     # output: Kim
-print(fees['Park']) # output: 8000
-
-# 수정 하는 법
-stu[102] = 'Python'
-print(stu)          # output: {101: 'Kim', 102: 'Python', 103: 'Park'}
-
-# 추가 하는 법
-stu[104] = 'John'
-print(stu)          # output: {101: 'Kim', 102: 'Python', 103: 'Park', 104: 'John'}
-
-# 삭제 하는 법
-del stu[102]
-print(stu)          # output: {101: 'Kim', 103: 'Park', 104: 'John'}
-
-# 있니 없니 멤버 in 이용해서 찾기
-print(102 in stu)     # output: False
-print(102 not in stu) # output: True
-
-# 복사하기
-new_stu = stu.copy()
-
+# # dictionary
+# stu = {101: 'Kim', 102: 'Bae', 103: 'Park'}
+# fees = {'Kim': 2000, 'Bae': 3000, 'Park': 8000}
 #
-key = (101, 102, 103)
-value = 'Lion'
-new1_stu = dict.fromkeys(key, value)
+# print(stu[101])     # output: Kim
+# print(fees['Park']) # output: 8000
+#
+# # 수정 하는 법
+# stu[102] = 'Python'
+# print(stu)          # output: {101: 'Kim', 102: 'Python', 103: 'Park'}
+#
+# # 추가 하는 법
+# stu[104] = 'John'
+# print(stu)          # output: {101: 'Kim', 102: 'Python', 103: 'Park', 104: 'John'}
+#
+# # 삭제 하는 법
+# del stu[102]
+# print(stu)          # output: {101: 'Kim', 103: 'Park', 104: 'John'}
+#
+# # 있니 없니 멤버 in 이용해서 찾기
+# print(102 in stu)     # output: False
+# print(102 not in stu) # output: True
+#
+# # 복사하기
+# new_stu = stu.copy()
+#
+# #
+# key = (101, 102, 103)
+# value = 'Lion'
+# new1_stu = dict.fromkeys(key, value)
+#
+# print(new1_stu) # output: {101: 'Lion', 102: 'Lion', 103: 'Lion'}
+#
+# # 접근하는 방법들
+# print(new_stu)      # output: {101: 'Kim', 103: 'Park', 104: 'John'}
+# print(stu[101])     # output: Kim
+# print(stu.get(101)) # output: Kim (함수로 호출하는 법)
+# print(stu.items())  # output: dict_items([(101, 'Kim'), (103, 'Park'), (104, 'John')])
+# print(stu.keys())   # output: dict_keys([101, 103, 104])
+#
+# # update
+# stu.update({103: 'Lion 2'})
+# print(stu)          # output: {101: 'Kim', 103: 'Lion 2', 104: 'John'}
+#
+# # pop
+# print(stu.pop(104)) # John - 삭제된 value
+# print(stu)          # {101: 'Kim', 103: 'Lion 2'}
+#
+# # setdefault
+# name = stu.setdefault(104, 'Pep')
+# print(stu)          # {101: 'Kim', 103: 'Lion 2', 104: 'Pep'}
+# print(name)         # pep
 
-print(new1_stu) # output: {101: 'Lion', 102: 'Lion', 103: 'Lion'}
+# def val(lst):
+#     print("Inside Function Before Append: ", lst, id(lst))
+#     lst.append(4)
+#     print("Inside Function Before Append: ", lst, id(lst))
+#
+# list = [1, 2, 3]
+# print("Before Calling Function: ", list, id(list))
 
-# 접근하는 방법들
-print(new_stu)      # output: {101: 'Kim', 103: 'Park', 104: 'John'}
-print(stu[101])     # output: Kim
-print(stu.get(101)) # output: Kim (함수로 호출하는 법)
-print(stu.items())  # output: dict_items([(101, 'Kim'), (103, 'Park'), (104, 'John')])
-print(stu.keys())   # output: dict_keys([101, 103, 104])
+def val(x):
+    print("Inside : ", x, id(x))
+    x += 1
+    print("Inside After: ", x, id(x))
 
-# update
-stu.update({103: 'Lion 2'})
-print(stu)          # output: {101: 'Kim', 103: 'Lion 2', 104: 'John'}
-
-# pop
-print(stu.pop(104)) # John - 삭제된 value
-print(stu)          # {101: 'Kim', 103: 'Lion 2'}
-
-# setdefault
-name = stu.setdefault(104, 'Pep')
-print(stu)          # {101: 'Kim', 103: 'Lion 2', 104: 'Pep'}
-print(name)         # pep
+x = 10
+print("Before Calling: ", x, id(x))     # output: Before Calling:  10 4498734456
+val(x)
+# output:
+# Inside :  10 4498734456
+# Inside After:  11 4498734488
+print("After Calling: ", x, id(x))      # output: After Calling:  10 4498734456
