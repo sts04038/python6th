@@ -159,13 +159,13 @@
 # <class 'function'>
 # Disp Function Show Function
 
-def disp():
-    def show():
-        return "Show Function"
-    print("Disp Function")
-    return show()
-r_sh = disp()
-print(r_sh)
+# def disp():
+#     def show():
+#         return "Show Function"
+#     print("Disp Function")
+#     return show()
+# r_sh = disp()
+# print(r_sh)
 
 # output:
 # Disp Function
