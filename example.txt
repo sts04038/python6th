@@ -1,3 +1,2 @@
-Hello, world
-Hello
-Hello
+This is a new file.
+Python is fun
