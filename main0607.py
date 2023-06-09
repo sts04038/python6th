@@ -92,15 +92,62 @@
 # list = [1, 2, 3]
 # print("Before Calling Function: ", list, id(list))
 
-def val(x):
-    print("Inside : ", x, id(x))
-    x += 1
-    print("Inside After: ", x, id(x))
+# def val(x):
+#     print("Inside : ", x, id(x))
+#     x += 1
+#     print("Inside After: ", x, id(x))
+#
+# x = 10
+# print("Before Calling: ", x, id(x))     # output: Before Calling:  10 4498734456
+# val(x)
+# # output:
+# # Inside :  10 4498734456
+# # Inside After:  11 4498734488
+# print("After Calling: ", x, id(x))      # output: After Calling:  10 4498734456
+#
 
-x = 10
-print("Before Calling: ", x, id(x))     # output: Before Calling:  10 4498734456
-val(x)
-# output:
-# Inside :  10 4498734456
-# Inside After:  11 4498734488
-print("After Calling: ", x, id(x))      # output: After Calling:  10 4498734456
+# show = lambda x: print(x)
+# show(5)
+# add = lambda x, y: (x+y, x-y)
+# a, s = add(5, 2)
+#
+# add_sub = lambda x, y: (x+y, x-y)
+# a, s = add(5, 2)
+#
+# print(a)
+# print(s)
+
+# decorate
+def decor(fun):
+    def inner():
+        a = fun()
+        add = a + 5
+        return add
+    return inner
+
+def num():
+    return 10
+
+result_fun = decor(num)
+print(result_fun())  # output: 15
+
+# 파이썬의 장점중 하나
+@decor
+def num():
+    return 10
+
+print(num())
+
+from array import *
+def show(ar):
+    print("Passed Array ar: ", ar)
+    print(type(ar))
+    for i in ar:
+        print(i)
+    return ar
+print()
+
+a = array('i', [101, 102, 103, 104])
+y = show(a)
+print("Return Array Y: ", y)  # output: Return Array Y:  array('i', [101, 102, 103, 104])
+print(type(y))                # output: <class 'array.array'>
