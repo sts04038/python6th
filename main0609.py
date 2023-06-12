@@ -25,13 +25,13 @@
 #
 # file_object.close()
 
-import os
-current_directory = os.getcwd()
-print(current_directory)
-
-os.makedirs('parent_directory/child_directory/grandchild_directory')
-
-for dirpath, dirnames, filenames in os.walk('parent_directory'):
-    print(f"디렉터리 경로: {dirpath}")
-    print(f"디렉터리 이름: {dirnames}")
-    print(f"파일 이름: {filenames}")
+# import os
+# current_directory = os.getcwd()
+# print(current_directory)
+#
+# os.makedirs('parent_directory/child_directory/grandchild_directory')
+#
+# for dirpath, dirnames, filenames in os.walk('parent_directory'):
+#     print(f"디렉터리 경로: {dirpath}")
+#     print(f"디렉터리 이름: {dirnames}")
+#     print(f"파일 이름: {filenames}")
