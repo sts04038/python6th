@@ -39,3 +39,4 @@ for v in a:
 # 동일 결과 3
 for i,v in enumerate(a):
     print(i, v)
+
