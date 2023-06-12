@@ -27,16 +27,18 @@
 # except CustomException as e:
 #     print(f"Error: {e.message}")
 
-a = ['a1', 'a2', 'a3']
-# 동일 결과 1
-for i in range(len(a)):
-    print(i, a[i])
-# 동일 결과 2
-i = 0
-for v in a:
-    print(i, v)
-    i += 1
-# 동일 결과 3
-for i,v in enumerate(a):
-    print(i, v)
+# import pprint
+# pprint.pprint(locals()) # pprint.pprint 하면 줄 바꿈되서 예쁘게 출력됨 pprint 하나하면 줄바꿈안됨
 
+words = ['apple', 'bat', 'bar', 'atom', 'book']
+by_letters = {}
+
+for word in words:
+    letter = word[0]
+    if letter not in by_letters:
+        by_letters[letter] = [word]
+    else:
+        by_letters[letter].append(word)
+
+print(by_letters)      # {'a': ['apple', 'atom'], 'b': ['bat', 'bar', 'book']}
+print(by_letters['c']) # keyworkd 'c'가 없으므로 key error 나는게 맞음
