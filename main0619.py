@@ -1,3 +1,4 @@
+from collections import deque
 graph = {
     'A': ['B', 'C'],
     'B': ['A', 'B', 'C'],
@@ -8,6 +9,16 @@ graph = {
 }
 
 visited = set()
+
+def bfs_iterative(start_node):
+    queue = deque([start_node])
+
+    while queue:
+        node = queue.popleft()
+        if node not in visited:
+            print(node, end=' ')
+            visited.add(node)
+            queue.extend(graph[node])
 
 def dfs_iterative(start_node):
     stack = [start_node]
@@ -21,3 +32,6 @@ def dfs_iterative(start_node):
 
 snode = 'A'
 dfs_iterative(snode) # output: A B C F E
+visited.clear() # 초기화
+print('\n-------')
+bfs_iterative(snode)
